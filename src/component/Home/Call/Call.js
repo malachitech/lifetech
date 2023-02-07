@@ -21,14 +21,14 @@ function Call() {
                 <div className='mt-8 flex items-center justify-start'>
                     <Link
                     to="/contact"
-                    className="mr-5  bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-blue-600 hover:bg-blue-100"
+                    className="mr-5 sm:text-xl text-sm  bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center font-medium text-blue-600 hover:bg-blue-100"
                     >
                     Contact Us
                     </Link>
 
                     <Link
                     to="/careers"
-                    className=" bg-white border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center text-base font-medium text-blue-600 hover:bg-blue-100"
+                    className=" bg-white sm:text-xl text-sm border border-transparent rounded-md shadow px-5 py-3 inline-flex items-center font-medium text-blue-600 hover:bg-blue-100"
                     >
                     Work With Us
                     </Link>
