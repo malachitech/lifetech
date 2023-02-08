@@ -1,8 +1,11 @@
 import React from 'react'
+import Portfolio from '../Portfolio/Portfolio'
 
 function PortfolioScreen() {
   return (
-    <div>PortfolioScreen</div>
+    <div>
+      <Portfolio />
+    </div>
   )
 }
 

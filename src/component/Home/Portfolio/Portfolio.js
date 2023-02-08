@@ -1,5 +1,8 @@
 import React from "react"
+import CyberPortfolio from "./Cyber"
 import DataPortfolio from "./DataSciencePortfolio"
+import MobilePortfolio from "./Mobile"
+import UxPortfolio from "./Ux"
 import WebDevPortfolio from "./WebDevPortfolio"
 
 /* This example requires Tailwind CSS v2.0+ */
@@ -15,6 +18,9 @@ function Portfolio() {
             
             <WebDevPortfolio />
             <DataPortfolio />
+            <CyberPortfolio />
+            <UxPortfolio />
+            <MobilePortfolio />
         </div>
         
     )

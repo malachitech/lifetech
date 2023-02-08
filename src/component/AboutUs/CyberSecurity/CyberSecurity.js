@@ -3,11 +3,11 @@ import ServiceTemplate from '../ServiceTemplate/ServiceTemplate'
 
 import web2 from "../../Images/web2.jpg"
 
-function WebSerice() {
+function CyberSecurity() {
   return (
     <div>
         <ServiceTemplate 
-            title="Web Development Services" 
+            title="Cyber Seecurity Services" 
             desc="Conversion of ideas into real solutions starting with the development of a concept and ending 
                 with the creation of a full-fledged web application is always a multi-stage, time-consuming and responsible process. The final result is crucially depends on how competent the work will be organized.
                 lifetech professional team provides web development services based on a great expertise in developing 
@@ -21,4 +21,4 @@ function WebSerice() {
   )
 }
 
-export default WebSerice
+export default CyberSecurity
