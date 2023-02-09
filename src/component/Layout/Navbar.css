@@ -1,4 +1,5 @@
 .navbar{
+    box-sizing: border-box;
     background-color: navy;
     height: 5em;
     position: fixed;
@@ -27,7 +28,7 @@
     animation: slideIn 0.5s;
   	opacity: 1;
     background-color: white;
-    width: 40%;
+    width: 60%;
     position: absolute;
     top: 5em;
     transition: right 1s;
@@ -52,7 +53,7 @@
     text-decoration: none;
     font-size: 1em;
     margin-top: 20px;
-    padding: 10px 35px;
+    padding: 10px 25px;
     transition: 0.5s ease-in;
     width: 100%;
     display: block;

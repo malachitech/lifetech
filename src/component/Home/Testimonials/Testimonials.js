@@ -15,7 +15,7 @@ function Testimonials() {
                 <div className=" mb-6 aspect-w-10 aspect-h-6 rounded-xl shadow-xl overflow-hidden sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full p-4  bg-blue-100">
                 
                     <div className="testimonialtitle">
-                        <h2 className="card_title">Why People Choose Us</h2>
+                        <h2 className="card_title">Why People Join Our Team</h2>
                         
                     </div>
                   
@@ -76,7 +76,7 @@ function Testimonials() {
               </div>
             </div>
             
-            <div className="mt-12 lg:m-0 lg:col-span-2 lg:pl-8">
+            <div className="mt-12  lg:m-0 lg:col-span-2 lg:pl-8">
               <TestimoniesSlider />
             </div>
           </div>

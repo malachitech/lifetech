@@ -8,7 +8,7 @@ import { HiHomeModern } from "react-icons/hi2";
 import { FcAbout } from "react-icons/fc";
 import { TbListDetails } from "react-icons/tb";
 import { RiContactsBookFill } from "react-icons/ri";
-import { FaCertificate } from "react-icons/fa";
+// import { FaCertificate } from "react-icons/fa";
 import { MdWork } from "react-icons/md";
 
 
@@ -31,7 +31,7 @@ function Navbar() {
 
 
         
-        <div className='md:hidden flex items-center justify-items-start text-blue-100 mr-6'>
+        <div className='lg:hidden flex items-center justify-start text-blue-100 mr-6'>
             <img className='text-blue-200 h-8 mr-4' src={contact} alt="Learn And Grow With Lifetech" />
             <button onClick={toggleNavbar}><BsFillGrid3X3GapFill className='text-xl' /></button>
         </div>
@@ -41,17 +41,17 @@ function Navbar() {
 
         {navbarOpen && 
             
-            <div className='md:hidden block popuplinks'>
+            <div className='lg:hidden block popuplinks'>
                 <div className='popuplinking text-blue-200'>
-                    <Link to='/'><HiHomeModern /> <span>&nbsp;Home</span></Link>
-                    <Link to='/about'><FcAbout /> <span>&nbsp;LifeTech</span></Link>
-                    <Link to='/portfolio'><TbListDetails /> <span>&nbsp;Portfolio</span></Link>
-                    <Link to='/contact'><RiContactsBookFill /> <span>&nbsp;Contact</span></Link>
+                    <Link to='/'  onClick={toggleNavbar}><HiHomeModern /> <span>&nbsp;Home</span></Link>
+                    <Link to='/about'  onClick={toggleNavbar}><FcAbout /> <span>&nbsp;LifeTech</span></Link>
+                    <Link to='/portfolio'  onClick={toggleNavbar}><TbListDetails /> <span>&nbsp;Portfolio</span></Link>
+                    <Link to='/contact'  onClick={toggleNavbar}><RiContactsBookFill /> <span>&nbsp;Contact</span></Link>
                 </div>
                 <div className='navbtns'>
-                    <Link to='/about' className='bg-gray-600 text-white'><FaCertificate className='text-lg text-blue-900'/> <span>&nbsp;Learn&nbsp;And&nbsp;Earn</span></Link>
-                    <Link to='/portfolio' className='bg-blue-100 text-black'><MdWork className='text-lg text-blue-900'/> <span>&nbsp;Employ&nbsp;us</span></Link>
-                    <div to='/portfolio' className='bg-blue-900 text-black'><img className=' text-blue-200' src={logo} alt="Learn And Grow With Lifetech" /></div>
+                    <Link to='/about' className='bg-gray-600 text-white'  onClick={toggleNavbar}><FcAbout className='text-lg text-blue-900'/> <span>&nbsp;Learn&nbsp;And&nbsp;Earn</span></Link>
+                    <Link to='/portfolio' className='bg-blue-100 text-black' onClick={toggleNavbar}><MdWork className='text-lg text-blue-900'/> <span>&nbsp;Employ&nbsp;us</span></Link>
+                    <div className='bg-blue-900 text-black'><img className=' text-blue-200' src={logo} alt="Learn And Grow With Lifetech" /></div>
                 </div>
             </div>
             
@@ -60,7 +60,7 @@ function Navbar() {
 
         {/* larger screens */}
 
-        <div className='links w-3/5 hidden md:flex justify-end items-center'>
+        <div className='links w-3/5 hidden lg:flex justify-end items-center'>
             <div className='linking text-blue-200 mr-10'>
                 <Link to='/'>Home</Link>
                 <Link to='/about'>LifeTech</Link>

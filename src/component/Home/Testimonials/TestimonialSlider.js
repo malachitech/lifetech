@@ -19,7 +19,7 @@ class TestimonialSlider extends Component {
       cssEase: "linear"
     };
     return (
-      <div>
+      <div className="w-4/5">
 
         <Slider {...settings}>
             
@@ -62,7 +62,7 @@ class TestimonialSlider extends Component {
                     I joined lifetechies and i have grown massively in my career. 
                     </p>
                   </div>
-                  <div className="brline mt-6 "/>
+                  <div className="brline mt-6"/>
                   <footer className="mt-6">
                     <p className="text-base font-medium text-white">Olaoba James</p>
                     <p className="text-base font-medium text-blue-100">CEO at Global Gauge</p>
