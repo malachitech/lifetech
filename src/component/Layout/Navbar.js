@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../Images/lifetechlogoremovebg.png'
-import contact from '../Images/contact.png'
+// import contact from '../Images/contact.png'
 import './Navbar.css'
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
+import { BiLogIn } from "react-icons/bi";
 import { HiHomeModern } from "react-icons/hi2";
 import { FcAbout } from "react-icons/fc";
 import { TbListDetails } from "react-icons/tb";
@@ -32,7 +33,11 @@ function Navbar() {
 
         
         <div className='lg:hidden flex items-center justify-start text-blue-100 mr-6'>
-            <img className='text-blue-200 h-8 mr-4' src={contact} alt="Learn And Grow With Lifetech" />
+            <Link to="/dashboard" className='flex items-center justify-start font-bold hover:text-blue-200 hover:bg-blue-900 bg-blue-200 px-6 rounded-md py-4 text-blue-900 h-8 mr-4'>
+             <BiLogIn /> &nbsp;Log In
+            </Link>
+            
+            {/* <img src={contact} alt="Learn And Grow With Lifetech" /> */}
             <button onClick={toggleNavbar}><BsFillGrid3X3GapFill className='text-xl' /></button>
         </div>
         
@@ -47,6 +52,8 @@ function Navbar() {
                     <Link to='/about'  onClick={toggleNavbar}><FcAbout /> <span>&nbsp;LifeTech</span></Link>
                     <Link to='/portfolio'  onClick={toggleNavbar}><TbListDetails /> <span>&nbsp;Portfolio</span></Link>
                     <Link to='/contact'  onClick={toggleNavbar}><RiContactsBookFill /> <span>&nbsp;Contact</span></Link>
+                    <Link to='/register'  onClick={toggleNavbar}><RiContactsBookFill /> <span>&nbsp;Register</span></Link>
+                    <Link to='/dashboard'  onClick={toggleNavbar}><BiLogIn /> <span>&nbsp;Log In</span></Link>
                 </div>
                 <div className='navbtns'>
                     <Link to='/about' className='bg-gray-600 text-white'  onClick={toggleNavbar}><FcAbout className='text-lg text-blue-900'/> <span>&nbsp;Learn&nbsp;And&nbsp;Earn</span></Link>
@@ -66,6 +73,8 @@ function Navbar() {
                 <Link to='/about'>LifeTech</Link>
                 <Link to='/portfolio'>Portfolio</Link>
                 <Link to='/contact'>Contact</Link>
+                <Link to='/contact'>Register</Link>
+                <Link to='/dashboard'>Log In</Link>
             </div>
             <div className='navbtns mr-5'>
                 <Link to='/about' className='bg-gray-600 text-white'>Learn&nbsp;And&nbsp;Earn</Link>
